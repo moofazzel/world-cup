@@ -46,7 +46,6 @@ section {
   color: #fff;
   text-align: center;
   border-radius: 30px;
-  margin: 20px;
   padding: 0 20px;
 }
 
@@ -117,7 +116,7 @@ section {
 
 /* Blogs start  */
 
-.blogs{
+.blogs {
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -193,8 +192,48 @@ section {
   margin-right: 10px;
 }
 
-.more{
+.more {
   display: none;
+}
+
+/* Footer  */
+
+.footer {
+  background-color: #161616;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+hr {
+  margin: 50px 0;
+  height: 1px;
+  border: none;
+  background-color: #fff;
+  opacity: 0.15;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+
+.footer-links li {
+  width: 100%;
 }
 
 /* Responsive css  */
@@ -237,24 +276,25 @@ section {
     justify-content: center;
   }
 
-  .blog-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 40px;
   }
 
-  .blogs-links{
-    grid-column: span 2;
+  .single-blog {
+    width: 48%;
   }
 
-  .single-blog {
-    margin: 0;
+  .more {
+    display: block;
+    margin: auto;
   }
-.more{
-  display: block;
-  margin:  auto;
-}
+
+  .footer-links li {
+    width: calc(100% / 5);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -294,14 +334,13 @@ section {
     max-width: 550px;
   }
   /* Blogs */
-  .blog-wrapper {
-    display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
+  .blogs .wrapper {
+    display: flex;
     gap: 20px;
   }
-
-  .blogs-links{
-    grid-column: span 1;
+  .blog-container {
+    display: flex;
+    width: calc(100% - 270px);
   }
 
   .blogs .blogs-links {
@@ -310,13 +349,17 @@ section {
     background-color: #161616;
     color: #161616;
     border-radius: 10px;
+    width: 270px;
     height: 230px;
   }
   .blogs .blog-link {
     background-color: #ffffff;
+    width: 83%;
+    text-align: center;
   }
   .single-blog {
     margin: 0;
+    width: 31%;
   }
 
   .active {
@@ -325,9 +368,11 @@ section {
     background-color: red !important;
   }
 
-  .more{
+  .more {
     display: none;
   }
+
+  .footer-links li {
+    width: calc(100% / 8);
+  }
 }
-
-
