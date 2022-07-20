@@ -83,10 +83,15 @@ section {
   top: 45px;
   left: -60px;
   width: 350px;
+  z-index: 5;
+  transition: .3s;
 }
 
 .hero p:hover .hero-tooltip {
   display: block;
+  background-color: black;
+  z-index: 999;
+
 }
 
 .hero .btn {
@@ -95,6 +100,8 @@ section {
 .hero .btn {
   margin-bottom: 25px;
   transition: .5s;
+  z-index: -1;
+
 }
 
 .hero .btn:hover {
@@ -105,6 +112,7 @@ section {
 .btn .fa-angle-right {
   transform: translateX(5px);
   transition: .5s;
+  z-index: -1 !important;
 }
 
 .hero .btn:hover .fa-angle-right {
@@ -344,6 +352,14 @@ hr {
 
   /* Blogs  */
 
+  .single-blog{
+    transition: .5s;
+  }
+
+  .single-blog:hover{
+    transform: scale(1.11);
+  }
+
   .blogs .blogs-links {
     display: flex;
     flex-direction: row;
@@ -359,6 +375,15 @@ hr {
 
   .single-blog {
     width: 48%;
+  }
+
+  
+  .single-blog{
+    transition: .5s;
+  }
+
+  .single-blog:hover{
+    transform: scale(1.08);
   }
 
   .more {
@@ -378,7 +403,7 @@ hr {
     align-items: center;
   }
   .hero .hero-text {
-    width: 34.5rem;
+    width: 31.5rem;
     margin: 0;
   }
   .hero h1 {
@@ -438,6 +463,15 @@ hr {
   .single-blog {
     margin: 0;
     width: 31%;
+  }
+
+  
+  .single-blog{
+    transition: .5s;
+  }
+
+  .single-blog:hover{
+    transform: scale(1.13);
   }
 
   .active {
