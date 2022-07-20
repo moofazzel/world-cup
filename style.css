@@ -211,10 +211,10 @@ section {
 }
 
 .blog-btn {
+  color: #2d63d3;
   font-size: 18px;
   font-weight: 500;
-  color: #161616;
-  border: 1px solid #161616;
+  border: 1px solid #2d63d3;
   border-radius: 5px;
   padding: 5px 15px;
 }
@@ -354,6 +354,7 @@ hr {
 
   .single-blog{
     transition: .5s;
+    margin: 0;
   }
 
   .single-blog:hover{
@@ -383,7 +384,7 @@ hr {
   }
 
   .single-blog:hover{
-    transform: scale(1.08);
+    transform: scale(1.06);
   }
 
   .more {
@@ -471,7 +472,7 @@ hr {
   }
 
   .single-blog:hover{
-    transform: scale(1.13);
+    transform: scale(1.11);
   }
 
   .active {
